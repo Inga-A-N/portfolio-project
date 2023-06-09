@@ -4,14 +4,53 @@ $orange : #E57C23;
 $darkYellow : #E8AA42;
 $oldWhite : #F8F1F1;
 
+@use "./mixins.scss";
+
+.centered {
+  @include mixins.centered;
+  &--nodecor{
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    
+  }
+  &__largericon {
+    font-size: 5vw;
+    color: $deepSeaBlue;
+  }
+
+  }
+
 body {
   background-color: $oldWhite;
+  min-height: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  footer {
+        
+    margin-top: auto;
+    border-top: 1px solid $deepSeaBlue;
+    
+    p {
+      text-align: right;
+      font-weight: bold;
+      color: $deepSeaBlue;
+    }
+  
+  }
 }
+
+
+
 .topnav {
   background-color: $deepSeaBlue;
-  padding: 5vw;
-  
+  padding: 2vw;
 
+  
   ul {
     display: flex;
     justify-content: space-around;
@@ -19,34 +58,33 @@ body {
     padding: 14px 16px;
     margin: 2%;
     text-decoration: none;
-    font-size: 4vw;
+    font-size: 3vw;
 
       li {
         list-style-type: none;
         
         a {
           text-decoration: none;
-          padding: 1vw;
-          border-radius: 50%;
-          box-shadow: 0px 0.3vw 0.5vw  $oldWhite;
-          background-color: $darkYellow;
-          color: $deepSeaBlue;
-          text-shadow: 0 0.2vw 0.2vw $oldWhite;
+          padding: 2vw;
+          
+          color: $darkYellow;
+          text-shadow: 0 0.2vw 0.2vw $orange;
+
+          &:hover {
+    
+            color: $orange;
+          }
         }
       }
 
     
   }
-  a:hover {
-    background-color: $orange;
-    padding: 1vw;
-    border-radius: 45%;
-    color: black;
-  }
+  
   
 }
 @media screen and (max-width: 600px) {
-    
+
+  
   }
   
 
