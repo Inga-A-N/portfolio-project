@@ -14,7 +14,12 @@ $oldWhite : #F8F1F1;
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    &#createdBy{
     align-items: flex-end;
+    font-weight: bold;
+    color: $deepSeaBlue;
+    }
     
   }
   &__largericon {
@@ -35,12 +40,6 @@ body {
     margin-top: auto;
     border-top: 1px solid $deepSeaBlue;
     
-    p {
-      text-align: right;
-      font-weight: bold;
-      color: $deepSeaBlue;
-    }
-  
   }
 }
 
