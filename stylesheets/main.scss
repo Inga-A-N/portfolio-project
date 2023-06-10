@@ -6,6 +6,8 @@ $oldWhite : #F8F1F1;
 
 @use "./mixins.scss";
 
+
+
 .centered {
   @include mixins.centered;
   &--nodecor{
@@ -28,15 +30,40 @@ $oldWhite : #F8F1F1;
     font-size: 5vw;
     color: $deepSeaBlue;
   }
+  div {
+    font-size: auto;
+    color: $deepSeaBlue;
+    font-weight: bold;
+    &.top {
+      width: 75vw;
+      text-align: start;
+      
+    }
+    &.bottom {
+      text-align: end;
+      width: 75vw;
+      
+    }
+    .over {
+      position: relative;
+      text-align: center;
+      color: $deepSeaBlue;
+      background: transparent;
+    }
+  }
   
   }
+
+  img {
+    @include mixins.mainImage
+  }
+
 
 body {
   background-color: $oldWhite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 
   footer {
     margin-top: auto;
@@ -80,12 +107,32 @@ body {
           }
         }
       }
-
-    
   }
-  
-  
 }
+
+
+
+// .page-with-img {
+//   @include mixins.backgroundImg;
+
+// isolation: isolate;
+//         display: flex;
+      
+      
+//          main::before{
+          
+//           opacity: 0.4;
+//           background-image: url(assets/Image.jpg);
+//           background-repeat: no-repeat;
+//           background-blend-mode: darken;
+//           // background-attachment: fixed;
+//         //   background-size: cover;
+//           position: absolute;
+//           inset: 10em;
+//           content: "";
+//       }
+
+//     }
 @media screen and (max-width: 600px) {
 
   

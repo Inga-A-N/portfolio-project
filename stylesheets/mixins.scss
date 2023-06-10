@@ -4,7 +4,21 @@
     justify-content: space-around;
     align-items: center;
     font-size: 2vw;
-    margin: 2vh 0;
+    // margin: 2vh 0;
     padding: 0;
  
 } 
+
+ @mixin mainImage {
+
+  max-width: 100%;
+  height: auto;
+  border-radius: 30% 0 30% 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  opacity: 0.6;
+        
+    
+ }
