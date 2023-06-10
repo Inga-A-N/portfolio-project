@@ -17,8 +17,10 @@ $oldWhite : #F8F1F1;
 
     &#createdBy{
     align-items: flex-end;
+    padding-right: 10px;
     font-weight: bold;
     color: $deepSeaBlue;
+    
     }
     
   }
@@ -26,7 +28,7 @@ $oldWhite : #F8F1F1;
     font-size: 5vw;
     color: $deepSeaBlue;
   }
-
+  
   }
 
 body {
@@ -67,11 +69,15 @@ body {
           padding: 2vw;
           
           color: $darkYellow;
-          text-shadow: 0 0.2vw 0.2vw $orange;
+          text-shadow: 0.1vw 0  $oldWhite;
 
           &:hover {
     
             color: $orange;
+          }
+          &.current{
+            text-decoration: underline;
+            text-decoration-thickness: 0.15vw;
           }
         }
       }

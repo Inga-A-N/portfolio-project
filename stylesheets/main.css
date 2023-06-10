@@ -13,6 +13,7 @@
 }
 .centered--nodecor#createdBy {
   align-items: flex-end;
+  padding-right: 10px;
   font-weight: bold;
   color: #025464;
 }
@@ -52,10 +53,14 @@ body footer {
   text-decoration: none;
   padding: 2vw;
   color: #E8AA42;
-  text-shadow: 0 0.2vw 0.2vw #E57C23;
+  text-shadow: 0.1vw 0 #F8F1F1;
 }
 .topnav ul li a:hover {
   color: #E57C23;
+}
+.topnav ul li a.current {
+  text-decoration: underline;
+  text-decoration-thickness: 0.15vw;
 }
 
 /*# sourceMappingURL=main.css.map */
