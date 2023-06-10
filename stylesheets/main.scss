@@ -14,12 +14,12 @@ $oldWhite : #F8F1F1;
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: $deepSeaBlue;
 
     &#createdBy{
     align-items: flex-end;
     padding-right: 10px;
     font-weight: bold;
-    color: $deepSeaBlue;
     
     }
     
@@ -33,15 +33,14 @@ $oldWhite : #F8F1F1;
 
 body {
   background-color: $oldWhite;
-  min-height: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 
+
   footer {
-        
     margin-top: auto;
     border-top: 1px solid $deepSeaBlue;
-    
   }
 }
 
@@ -69,7 +68,7 @@ body {
           padding: 2vw;
           
           color: $darkYellow;
-          text-shadow: 0.1vw 0  $oldWhite;
+          text-shadow: 0.1vw 0 $oldWhite;
 
           &:hover {
     
