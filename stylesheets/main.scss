@@ -1,8 +1,9 @@
 // Collour palette
 $deepSeaBlue : #025464;
-$orange : #E57C23;
-$darkYellow : #E8AA42;
+$orange : #ebb914;//#E57C23;
+$darkYellow : #fbe69f; //#E8AA42;
 $oldWhite : #F8F1F1;
+
 
 @use "./mixins.scss";
 
@@ -10,7 +11,60 @@ $oldWhite : #F8F1F1;
 
 .centered {
   @include mixins.centered;
-  &--nodecor{
+
+  color: $deepSeaBlue;
+
+  &.home-page {
+    
+    height: 100vh;
+    margin: 5% 0 5%;
+    
+    background-color: $darkYellow;
+    flex-wrap: nowrap;
+    position: relative;
+    
+  
+    &__name-heading {
+
+      @include mixins.mainImage;
+      opacity: 1;
+
+      position: absolute;
+      height: 50%;
+      width: 45%;
+      left: 9%;
+      align-self: flex-start;
+      background-color: $deepSeaBlue;
+      color: $oldWhite;
+      font-size: 380%;
+      text-align: center;
+      text-shadow: 1px 3px 3px $deepSeaBlue;
+      
+    }
+  
+    &__position-heading{
+
+      @include mixins.mainImage;
+      opacity: 1;
+      
+      position: absolute;
+      height: 50%;
+      width: 35%;
+      right: 9%;
+      align-self: flex-end;
+      background-color: $orange;
+      color: $oldWhite;
+      font-size: 380%;
+      text-align: center;
+      text-shadow: 1px 3px 3px $deepSeaBlue;
+      padding-left: 10%;
+      padding-right: 2%;
+    }
+    
+  }
+    
+
+    &--nodecor{
     text-decoration: none;
     
     display: flex;
@@ -30,36 +84,40 @@ $oldWhite : #F8F1F1;
     font-size: 5vw;
     color: $deepSeaBlue;
   }
-  div {
-    font-size: auto;
-    color: $deepSeaBlue;
-    font-weight: bold;
-    &.top {
-      width: 75vw;
-      text-align: start;
-      
-    }
-    &.bottom {
-      text-align: end;
-      width: 75vw;
-      
-    }
-    .over {
-      position: relative;
-      text-align: center;
-      color: $deepSeaBlue;
-      background: transparent;
-    }
-  }
+
   
-  }
 
+  
   img {
-    @include mixins.mainImage
+    @include mixins.mainImage;
+    }
+  
+    
   }
 
+  .image {
+    position: relative;
+    font-weight: bold;
 
-body {
+    .top{
+      position: absolute;
+      top: 10%;
+      right: 60%;
+      
+      text-align: start;
+      font-size: 125%;
+    }
+    .bottom{
+      position: absolute;
+      bottom: 5%;
+      left: 60%;
+      
+      text-align: start;
+      font-size: 125%;
+    }
+  }
+
+ body {
   background-color: $oldWhite;
   min-height: 100vh;
   display: flex;
@@ -76,26 +134,32 @@ body {
 .topnav {
   background-color: $deepSeaBlue;
   padding: 2vw;
+  
 
   
   ul {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 14px 16px;
     margin: 2%;
+    padding: 0;
     text-decoration: none;
     font-size: 3vw;
-
+    
+    
       li {
         list-style-type: none;
+        font-family: (--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        
         
         a {
+          
+          // font-size: 90%;
           text-decoration: none;
           padding: 2vw;
           
           color: $darkYellow;
-          text-shadow: 0.1vw 0 $oldWhite;
+          text-shadow: 1px 0 $oldWhite;
 
           &:hover {
     
@@ -111,28 +175,6 @@ body {
 }
 
 
-
-// .page-with-img {
-//   @include mixins.backgroundImg;
-
-// isolation: isolate;
-//         display: flex;
-      
-      
-//          main::before{
-          
-//           opacity: 0.4;
-//           background-image: url(assets/Image.jpg);
-//           background-repeat: no-repeat;
-//           background-blend-mode: darken;
-//           // background-attachment: fixed;
-//         //   background-size: cover;
-//           position: absolute;
-//           inset: 10em;
-//           content: "";
-//       }
-
-//     }
 @media screen and (max-width: 600px) {
 
   
