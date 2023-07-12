@@ -144,4 +144,25 @@ body footer {
   text-decoration-thickness: 0.15vw;
 }
 
+@media screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    width: auto;
+  }
+  .centered {
+    height: 100%;
+  }
+  .centered.home-page__position-heading {
+    width: 90%;
+    right: 2%;
+  }
+  .centered.home-page__name-heading {
+    width: 90%;
+    left: 2%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

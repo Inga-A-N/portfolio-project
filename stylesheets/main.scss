@@ -176,8 +176,34 @@ $oldWhite : #F8F1F1;
 
 
 @media screen and (max-width: 600px) {
-
+* {
+  box-sizing: border-box;
   
+}
+body{
+    // border: 2px solid black;
+    height: 100vh;
+    width: auto;
+    
   }
+  .centered{
+
+    height: 100%;
+    
+    &.home-page {
+      
+      &__position-heading{
+
+        width: 90%;
+        right: 2%;
+
+      }
+      &__name-heading {
+        width: 90%;
+        left: 2%;
+      }
+    }
+  }
+}
   
 
