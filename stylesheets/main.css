@@ -1,3 +1,9 @@
+.page {
+  margin-top: 14%;
+  height: 100vh;
+  width: 100vw;
+}
+
 .centered {
   display: flex;
   flex-wrap: wrap;
@@ -9,8 +15,8 @@
   color: #025464;
 }
 .centered.home-page {
-  height: 100vh;
-  margin: 5% 0 5%;
+  height: 80vh;
+  margin: 0 0 5%;
   background-color: #fbe69f;
   flex-wrap: nowrap;
   position: relative;
@@ -30,7 +36,7 @@
   left: 9%;
   align-self: flex-start;
   background-color: #025464;
-  color: #F8F1F1;
+  color: #f8f1f1;
   font-size: 380%;
   text-align: center;
   text-shadow: 1px 3px 3px #025464;
@@ -50,7 +56,7 @@
   right: 9%;
   align-self: flex-end;
   background-color: #ebb914;
-  color: #F8F1F1;
+  color: #f8f1f1;
   font-size: 380%;
   text-align: center;
   text-shadow: 1px 3px 3px #025464;
@@ -64,13 +70,8 @@
   text-align: center;
   color: #025464;
 }
-.centered--nodecor#createdBy {
-  align-items: flex-end;
-  padding-right: 10px;
-  font-weight: bold;
-}
 .centered__largericon {
-  font-size: 5vw;
+  font-size: 4vw;
   color: #025464;
 }
 .centered img {
@@ -103,25 +104,43 @@
 }
 
 body {
-  background-color: #F8F1F1;
+  background-color: #f8f1f1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 body footer {
+  background-color: #f8f1f1;
   margin-top: auto;
   border-top: 1px solid #025464;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7%;
+}
+body footer p {
+  color: #025464;
+  margin: 0%;
+  text-align: end;
+  padding-right: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+body footer ul {
+  margin: 0%;
 }
 
 .topnav {
   background-color: #025464;
-  padding: 2vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .topnav ul {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin: 2%;
+  height: 7%;
   padding: 0;
   text-decoration: none;
   font-size: 3vw;
@@ -134,7 +153,7 @@ body footer {
   text-decoration: none;
   padding: 2vw;
   color: #fbe69f;
-  text-shadow: 1px 0 #F8F1F1;
+  text-shadow: 1px 0 #f8f1f1;
 }
 .topnav ul li a:hover {
   color: #ebb914;
@@ -149,19 +168,18 @@ body footer {
     box-sizing: border-box;
   }
   body {
-    height: 100vh;
-    width: auto;
-  }
-  .centered {
-    height: 100%;
+    margin: 0%;
+    width: 100%;
   }
   .centered.home-page__position-heading {
-    width: 90%;
-    right: 2%;
+    width: 70%;
+    right: 5%;
+    bottom: 5%;
   }
   .centered.home-page__name-heading {
-    width: 90%;
-    left: 2%;
+    width: 70%;
+    left: 5%;
+    top: 5%;
   }
 }
 
