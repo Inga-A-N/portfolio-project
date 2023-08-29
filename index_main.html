@@ -8,15 +8,22 @@
     <script src="https://kit.fontawesome.com/c3eb20dee6.js" crossorigin="anonymous" defer></script>
     <script src="./script/main.js" defer></script>
     <title>Inga Andreva</title>
+    <link rel="icon" type="image/x-icon" href="./stylesheets/assets/favicon.png">
   </head>
   <body>
     <!-- Home -->
     <a id="home_section" class="current"></a>
     <div class="page">
     <header>
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
       <nav class="topnav" id="myTopNav">
         <ul>
-        <li><a href="#home_section">Home</a></li>
+        <li><a href="#home_section" >Home</a></li>
         <li><a href="#about_section">About</a></li>
         <li><a href="#projects_section" >Projects</a></li>
         <li><a href="#skills_section">Skills</a></li>
@@ -25,7 +32,7 @@
 
     </header>
 
-    <main>
+    
     <div class="centered home-page">
       
       <h2 class="centered home-page__position-heading">Software Engineer</h2>
@@ -33,7 +40,7 @@
       <h1 class="centered home-page__name-heading">Inga Andreeva</h1>
     </div>
 
-    </main>
+    
   </div>
 
     <!-- About -->
@@ -41,27 +48,28 @@
 <a id="about_section"></a>
 
 <div class="page">
-    <main >
-      
-      
+    
 
       <figure class="centered image">
         
-      <img src="stylesheets/assets/IMG_8506.JPG" alt="Inga" class="background-img">
-
-      <figcaption class="page-with-img top">Aspiring software engineer with experience in manual testing on various distinct projects.</figcaption>
       
-        <figcaption class="page-with-img bottom">Confident that my diverse experience will easily translate into the software engineering field.
+
+      
+      <img src="stylesheets/assets/IMG_8506.JPG" alt="Inga" class="background-img">
+      
+      <figcaption class="page-with-image__top">Aspiring software engineer with experience in manual testing on various distinct projects.</figcaption>
+
+        <figcaption class="page-with-image__bottom">Confident that my diverse experience will easily translate into the software engineering field.
       </figcaption>
   </figure>
-  </main>
+  
 </div>
 
 <!-- Projects -->
 
   <a id="projects_section"></a>
   <div class="page">
-  <main>
+  
 
     <h1>My Projects</h1>
 
@@ -71,15 +79,15 @@
       <li class="centered--nodecor"><h2>eShop Project</h2></li>
     </ul>
 
-  </main>
+  
   </div>
   
   <!-- Skills -->
   <a id="skills_section"></a>
 
   <div class="page">
-  <main>
-    <h1>Skills</h1>
+  
+    
 
     <ul class="centered">
       
@@ -93,28 +101,34 @@
         <label for="sass">SCSS/SASS</label></li>
       <li class="centered centered--nodecor"><i class="fa-brands fa-python centered__largericon" name="python" id="pythonIcon"></i>
         <label for="python">Python</label></li>
+        <li class="centered centered--nodecor"><i class="fa-brands fa-react centered__largericon"></i>
+          <label for="react">React</label></li>
+          <li class="centered centered--nodecor"><i class="fa-brands fa-java centered__largericon"></i><label for="java">Java</label></li>
+          <li class="centered centered--nodecor"><i class="fa-solid fa-leaf centered__largericon"></i><label for="springboot">SpringBoot</label></li>
+          <li class="centered centered--nodecor"><i class="fa-solid fa-database centered__largericon"></i><label for="sql">SQL</label></li>
+          <li class="centered centered--nodecor"><img src="stylesheets/assets/icons8-firebase-384.png" alt="firebase icon" class="centered__largericon picIcon"><label for="firestore">Firestore</label></img></li>
       
           
     </ul>
-</main>
+
 </div>
 
 <!-- Footer -->
 <footer>
   <ul class="centered">
-    <li class="centered--nodecor centered__largericon">
-      <a href="https://github.com/Inga-A-N" class="centered__largericon">
-        <i class="fa-brands fa-github " ></i>
+    <li class="centered--nodecor">
+      <a href="https://github.com/Inga-A-N" class="centered__footer-icon">
+        <i class="fa-brands fa-github centered__footer-icon" ></i>
       </a>
     </li>
     <li class="centered--nodecor ">
-      <a href="https://www.linkedin.com/in/inandreeva/" class="centered__largericon">
-        <i class="fa-brands fa-linkedin "></i>
+      <a href="https://www.linkedin.com/in/inandreeva/" class="centered__footer-icon">
+        <i class="fa-brands fa-linkedin centered__footer-icon"></i>
       </a>
     </li>
-    <li class="centered--nodecor centered__largericon">
-      <a href="mailto: test@test.com" class="centered__largericon">
-        <i class="fa-solid fa-envelope "></i>
+    <li class="centered--nodecor">
+      <a href="mailto: test@test.com" class="centered__footer-icon">
+        <i class="fa-solid fa-envelope centered__footer-icon"></i>
       </a>
     </li>
 
