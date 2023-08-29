@@ -213,7 +213,8 @@ body {
     width: 100%;
   }
   .centered {
-    // height: 100%;
+    gap: 40px;
+    // font-size: 30px;
 
     &.home-page {
       &__position-heading {
@@ -227,7 +228,19 @@ body {
         top: 5%;
       }
     }
+    &__largericon {
+      font-size: 70px;
+    }
+
+    &__footer-icon {
+      text-decoration: none;
+    }
   }
+
+  label {
+    font-size: 20px;
+  }
+
   .topnav {
     height: 100%;
     position: fixed;

@@ -193,6 +193,9 @@ body footer ul {
     margin: 0%;
     width: 100%;
   }
+  .centered {
+    gap: 40px;
+  }
   .centered.home-page__position-heading {
     width: 70%;
     right: 5%;
@@ -202,6 +205,15 @@ body footer ul {
     width: 70%;
     left: 5%;
     top: 5%;
+  }
+  .centered__largericon {
+    font-size: 70px;
+  }
+  .centered__footer-icon {
+    text-decoration: none;
+  }
+  label {
+    font-size: 20px;
   }
   .topnav {
     height: 100%;
