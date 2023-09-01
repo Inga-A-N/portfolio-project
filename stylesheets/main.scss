@@ -7,7 +7,7 @@ $oldWhite: #f8f1f1;
 @use "./mixins.scss";
 
 .page {
-  margin-top: 14%;
+  margin-top: 10%;
   height: 90vh;
   width: 100%;
 }
@@ -82,6 +82,7 @@ $oldWhite: #f8f1f1;
 
   img {
     @include mixins.mainImage;
+
     &.picIcon {
       height: 7vh;
       // width: 5vw;
@@ -549,5 +550,14 @@ section {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  img {
+    &.background-img {
+      height: calc(100vh / 1.75);
+      width: calc(100vh / 1.75);
+    }
   }
 }

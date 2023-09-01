@@ -1,5 +1,5 @@
 .page {
-  margin-top: 14%;
+  margin-top: 10%;
   height: 90vh;
   width: 100%;
 }
@@ -22,11 +22,7 @@
   position: relative;
 }
 .centered.home-page__name-heading {
-  max-width: 100%;
-  height: auto;
   border-radius: 30% 0 30% 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
   opacity: 0.6;
   opacity: 1;
@@ -42,11 +38,7 @@
   text-shadow: 1px 3px 3px #025464;
 }
 .centered.home-page__position-heading {
-  max-width: 100%;
-  height: auto;
   border-radius: 30% 0 30% 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
   opacity: 0.6;
   opacity: 1;
@@ -82,11 +74,7 @@
   color: #025464;
 }
 .centered img {
-  max-width: 100%;
-  height: auto;
   border-radius: 30% 0 30% 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
   opacity: 0.6;
 }
@@ -476,6 +464,12 @@ section {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
+  }
+}
+@media screen and (orientation: landscape) {
+  img.background-img {
+    height: 57.1428571429vh;
+    width: 57.1428571429vh;
   }
 }
 
