@@ -1,13 +1,13 @@
 // Collour palette
 $deepSeaBlue: #025464;
 $orange: #ebb914; //#E57C23;
-$darkYellow: #fbe69f; //#E8AA42;
+$darkYellow: #fcf2d3; //#fbe69f; //#E8AA42;
 $oldWhite: #f8f1f1;
 
 @use "./mixins.scss";
 
 .page {
-  margin-top: 10%;
+  margin-top: 12vh;
   height: 90vh;
   width: 100%;
 }
@@ -35,7 +35,8 @@ $oldWhite: #f8f1f1;
       align-self: flex-start;
       background-color: $deepSeaBlue;
       color: $oldWhite;
-      font-size: 350%;
+      font-size: min(7vw, 90px);
+
       text-align: center;
       text-shadow: 1px 3px 3px $deepSeaBlue;
     }
@@ -51,7 +52,7 @@ $oldWhite: #f8f1f1;
       align-self: flex-end;
       background-color: $orange;
       color: $oldWhite;
-      font-size: 350%;
+      font-size: min(7vw, 90px);
       text-align: center;
       text-shadow: 1px 3px 3px $deepSeaBlue;
       padding-left: 10%;
@@ -102,7 +103,7 @@ $oldWhite: #f8f1f1;
       // background-color: rgba($oldWhite, 0.25);
 
       text-align: start;
-      font-size: 125%;
+      font-size: min(3vw, 45px);
       font-weight: bold;
     }
     &__bottom {
@@ -111,9 +112,10 @@ $oldWhite: #f8f1f1;
       right: 0%;
       align-self: flex-end;
       background-color: rgba($oldWhite, 0.25);
+      border-top-left-radius: 25px;
 
       text-align: start;
-      font-size: 125%;
+      font-size: min(3vw, 45px);
       font-weight: bold;
     }
   }
@@ -168,7 +170,6 @@ body {
     justify-content: space-around;
     text-align: center;
     height: 7%;
-    // margin: 2%;
     padding: 0;
     text-decoration: none;
     font-size: 3vh;
@@ -206,10 +207,10 @@ body {
     display: block;
     content: "";
     width: 100%;
-    padding-top: ($height / $width) * 100%;
+    padding-top: calc($height / $width) * 100%;
   }
 
-  > img {
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -220,11 +221,8 @@ body {
   }
 }
 
-// Styling
-
 section {
   background: #f4f4f4;
-  // padding: 50px 0;
 }
 
 .container {
@@ -239,7 +237,7 @@ section {
   position: relative;
   margin-bottom: 22px;
 
-  > input {
+  input {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
